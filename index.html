@@ -1,57 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width-device-width,initial-scale=1.0">
-	<title>Curso Premium CSS</title>
-	<link rel="stylesheet" href="css/index.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Construccion</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+<body background="fondo.jpg">
 <body>
-	<a href="#">CF.com</a>
-	<a href="#-#">google</a>
-	<a href="###">CF.com</a>
-	<a href="#-33#">google</a>
-	<div class="container">
-		<h1 class="title">Extras en CSS</h1>
-	</div>
-	<div class="">
-		<img class="cat responsive" src="img/cat.jpg" alt="">
-		<img class="gopher responsive" src="img/gopher.png" alt="">
-	</div>
-	<div class="polaroid">
-		<img src="img/fondo1.jpg" width="300">
-		<div class="texto">
-			<p>Paisaje rosa</p>
-		</div>
-	</div>
-	<div class="polaroid">
-		<img src="img/fondo2.png" width="300">
-		<div class="texto">
-			<p>Playa</p>
-		</div>
-	</div>
-	<div class="polaroid">
-		<img src="img/cat.jpg" width="300">
-		<p class="imgtext">Para: </p>
-		<div class="texto">
-			<p>Gatito</p>
-		</div>
-	</div>
-	<div class="polaroid">
-		<img src="img/gopher.png" width="300">
-		<p class="imgtext">Para: </p>
-		<div class="texto">
-			<p>Gopher</p>
-		</div>
-	</div>
-	<!-- Thumbs -->
-	<!-- <img class="cat thumb" src="cat.jpg" alt="">
-	<img class="gopher thumb" src="gopher.png" alt=""> -->
-	<div class="cubo"></div>
-	<!-- <div class="ejercicios">
-		<div class="content"></div>
-		<h2 class="text">Me pareció ver a un lindo gatito</h2>
-	</div> -->
-</body>
-</html>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="">LECTURAS</a>
+                </li>
+                <li>
+              </li>
+                <li>
+                    <a href="">MULTIMEDIA</a>
+                </li>
+                <li>
+                    <a href="">ACTIVIDADES</a>
+                </li>
+                <li>
+                </li>
+                <li>
+                    <a href="">AUTORES</a>
+                </li>
+                <li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>204035 PROGRAMACION WEB 1</h1>
+                         <h2>Informacion General:</h2>
+                         <h3>Creacion y Vinculacion de Base de Datos con pagina Web desde PHP</h3>
+                             <h2>Objetivos:</h2>
+                             <h3>. Creacion de Base de Datos en  MySql en Phpmyadmin</h3>
+                             <h3>. </h3>
+                             <h3>. </h3>
+                             <h3>. </h3>
+                        
+                       <dl class="dl-horizontal">
+                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+<p class="bg-primary">Proyecto Realizado Por Lenington Cantillo.  </p>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    
+ </body>
+<html>
