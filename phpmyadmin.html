@@ -1,54 +1,7 @@
-﻿<?php
-    echo "<META HTTP-EQUIV='refresh' CONTENT='30'; URL=boots.php'>"; 
-    
-    // Lee un archivo que contiene sólo una línea
-    
-    // Abre el archivo
-    $archivo = fopen("TIEMPO.txt", "r") or die("No se pudo abrir el archivo!");
-    
-    // Obtiene el contenido y lo guarda en la variable $contenido
-    $contenido = fgets($archivo);
-    
-    // Cierra el archivo
-    fclose($archivo);
-    
-    // Convierto el contenido en un arreglo, separando los datos por coma
-    $arreglo = explode(",", $contenido);
-    
-    // Muestro la variable $contenido
-    //echo($contenido);
-    
-    // Muestro un espacio en blanco
-    //echo '</br></br>';
-    
-    // Muestro el arreglo
-    //print_r($arreglo[3]);
-    
-    //echo '</br></br>';
-    
-    $fondo = 'fondo.jpg';
-    $precipitacion = $arreglo[40];
-    $temperatura = $arreglo[26];
-    $humedad = $arreglo[19];
-    $radiacion = $arreglo[47];
-    
-    if($precipitacion > 0) {
-        $fondo = 'fondo.jpg';
-    }
-     if($radiacion > 350) {
-        $fondo = 'fondo.jpg';
-    }
-    if($radiacion < 360) {
-        $fondo = 'fondo.jpg';
-    }
-    if($radiacion < 30) {
-        $fondo = 'fondo.jpg';
-    }
-?>
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
-  <title>AUTOMATICA</title>
+  <title>phpmyadmin</title>
  <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -69,58 +22,26 @@
 
 
 <div class="container text-center">
-  <h3>Estacion Automatica del  Area Operativa 02 Barranquilla</h3>
-  <p><em>Consulta de Sensores</em></p>
+  <h2>¿Que es PHPMYADMIN?</h2>
+  <p><em>phpMyAdmin es una herramienta escrita en PHP con la intención de manejar la administración de MySQL a través de páginas web, utilizando Internet. Actualmente puede crear y eliminar Bases de Datos, crear, eliminar y alterar tablas, borrar, editar y añadir campos, ejecutar cualquier sentencia SQL, administrar claves en campos, administrar privilegios, exportar datos en varios formatos y está disponible en 72 idiomas. Se encuentra disponible bajo la licencia GPL Versión 2.
+
+Este proyecto se encuentra vigente desde el año 1998, siendo el mejor evaluado en la comunidad de descargas de SourceForge.net como la descarga del mes de diciembre del 2002. Como esta herramienta corre en máquinas con Servidores Webs y Soporte de PHP y MySQL, la tecnología utilizada ha ido variando durante su desarrollo.</em></p>
   
 
-<?php
-
-echo "FECHA: ".$arreglo[3]."/";
-echo "".$arreglo[4]."/";
-echo "".$arreglo[5];
-echo '</br></br>';
-echo "HORA: ".$arreglo[2];
-echo '</br></br>';
-echo "PRECIPITACION:</span> <span class='dato'>".$precipitacion." mm</span>";
-echo '</br></br>';
-echo "TEMPERATURA: <span class='dato'>".$temperatura." C</span>";
-echo '</br></br>';
-echo "HUMEDAD RELATIVA : <span class='dato'>".$humedad." %</span>";
-echo '</br></br>';
-echo "RADIACION GLOBAL : <span class='dato'>".$radiacion." w/m2</span>";
-echo '</br></br>';
-?>
 
 
 <body>
 <div class="container text-center">
 
- 
-<a href="grafica_temperatura2.php" target="_self"><input type="submit" class="btn btn-primary"
-                       value="Temperatura">
-                       </form></div>
-                         </div>
-                         </div>
-<a href="grafica_humedad2.php" target="_self"><input type="submit" class="btn btn-primary"
-                       value="Humedad Relativa">
-                       </form></div>
-                         </div>
-                         </div>
                          
-<a href="grafica_precipitacion2.php" target="_self"><input type="submit" class="btn btn-primary"
-                       value="Precipitacion">
-                       </form></div>
-                         </div>
-                         </div>
-                         
- <a href="grafica_radiacion2.php" target="_self"><input type="submit" class="btn btn-primary"
-                       value="Radiacion Global">
-                       </form></div>
-                         </div>
-                         </div>
-                         
-  <p class="bg-primary">Proyecto Realizado Por Lenington Cantillo. Tecnico Adm.  IDEAM Area Ope 02 Barranquilla </p>
+  <p class="bg-primary">Proyecto Realizado Por Lenington Cantillo. </p>
                        
+  
+  <a href="/LECTURAS.html" target="_self"><input type="submit" class="btn btn-primary"
+                       value="Regresar">
+                       </form></div>
+                         </div>
+ 
                          
                          
         </body>
