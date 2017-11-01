@@ -23,38 +23,38 @@
 
 <div class="container text-center">
   <h3>Codigo php para conexiones a BD </h3>
-  <p><em>Este simple ejemplo muestra como conectar, ejecutar una consulta, imprimir las filas resultantes y desconectar a una base de datos MySQL.
+  <p><em>Este simple ejemplo muestra como conectar, ejecutar una consulta, imprimir las filas resultantes y desconectar a una base de datos MySQL.</em></p>
 
-Ejemplo #1 Ejemplo general de la extensión MySQL
+<p><em>Ejemplo #1 Ejemplo general de la extensión MySQL</em></p>
 
-<?php
-// Conectando, seleccionando la base de datos
-$link = mysql_connect('mysql_host', 'mysql_user', 'mysql_password')
-    or die('No se pudo conectar: ' . mysql_error());
-echo 'Connected successfully';
-mysql_select_db('my_database') or die('No se pudo seleccionar la base de datos');
+<p><em><?php</em></p>
+<p><em>// Conectando, seleccionando la base de datos</em></p>
+<p><em>$link = mysql_connect('mysql_host', 'mysql_user', 'mysql_password')</em></p>
+   <p><em> or die('No se pudo conectar: ' . mysql_error());</em></p>
+<p><em>echo 'Connected successfully';</em></p>
+<p><em>mysql_select_db('my_database') or die('No se pudo seleccionar la base de datos');</em></p>
 
-// Realizar una consulta MySQL
-$query = 'SELECT * FROM my_table';
-$result = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
+<p><em>// Realizar una consulta MySQL</em></p>
+<p><em>$query = 'SELECT * FROM my_table';</em></p>
+<p><em>$result = mysql_query($query) or die('Consulta fallida: ' . mysql_error());</em></p>
 
-// Imprimir los resultados en HTML
-echo "<table>\n";
-while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
-    echo "\t<tr>\n";
-    foreach ($line as $col_value) {
-        echo "\t\t<td>$col_value</td>\n";
-    }
-    echo "\t</tr>\n";
-}
-echo "</table>\n";
+<p><em>// Imprimir los resultados en HTML</em></p>
+<p><em>echo "<table>\n";</em></p>
+<p><em>while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {</em></p>
+    <p><em>echo "\t<tr>\n";</em></p>
+    <p><em>foreach ($line as $col_value) {</em></p>
+        <p><em>echo "\t\t<td>$col_value</td>\n";</em></p>
+   <p><em> } </em></p>
+    <p><em>echo "\t</tr>\n";</em></p>
+<p><em>} </em></p>
+<p><em>echo "</table>\n";</em></p>
 
-// Liberar resultados
-mysql_free_result($result);
+<p><em>// Liberar resultados</em></p>
+<p><em>mysql_free_result($result);</em></p>
 
-// Cerrar la conexión
-mysql_close($link);
-?></em></p>
+<p><em>// Cerrar la conexión</em></p>
+<p><em>mysql_close($link);</em></p>
+<p><em>?></em></p>
   
 
 
